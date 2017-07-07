@@ -5,17 +5,28 @@ import {Meal}from './meal.model';
   template: `
   <div class="container">
   <h1>Meal Tracker</h1>
+  <div class="row">
+  <div class="col-md-9">
+    <h1>List of Meals</h1>
   <meal-list
   [childMealList]="masterMealList"
   (clickSender)="showDetails($event)"
 
   ></meal-list>
+  </div >
+  <div class="col-md-3" >
+  <div class="row">
+  <new-meal
+  (newMealSender)="addMeal($event)"
+  ></new-meal>
+  </div>
+  <div class="row">
   <edit-meal
   [childSelectedMeal]= "selectedMeal"
   (doneClickedSender)="finishedEditing()"
   ></edit-meal>
-
-
+</div>
+    </div>
   </div>
   `
 })
@@ -30,6 +41,9 @@ showDetails(clickedMeal: Meal) {
  }
  finishedEditing() {
    this.selectedMeal = null;
+ }
+ addMeal(newMealFromChild: Meal){
+   this.masterMealList.push(newMealFromChild)
  }
 
 
