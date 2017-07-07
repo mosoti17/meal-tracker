@@ -6,8 +6,9 @@ import {Meal}from './meal.model';
   <div class="container">
   <h1>Meal Tracker</h1>
   <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-9"id="main">
     <h1>List of Meals</h1>
+
   <meal-list
   [childMealList]="masterMealList"
   (clickSender)="showDetails($event)"

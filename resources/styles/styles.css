@@ -1,3 +1,19 @@
 h1 {
   color: blue;
+  text-align: center;
+}
+#list{
+background-color: blue;
+width:20%;
+text-align: center;
+padding: 0.2%;
+margin: 2%;
+word-break: break-all;
+}
+#main{
+  float: left;
+}
+#select{
+  width: 50%;
+  align: center;
 }
