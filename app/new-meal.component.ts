@@ -6,15 +6,15 @@ import {Meal}from './meal.model';
   <h2>New Meal</h2>
 <div>
   <label>Enter Meal Name:</label>
-  <input type="text" #newName required>
+  <input class="form-control" type="text" #newName required>
 </div>
 <div>
   <label>Enter Meal Details:</label>
-  <input maxlength="50" required #newDetails>
+  <input class="form-control" maxlength="50" required #newDetails>
 </div>
 <div>
   <label>Enter Meal Calories:</label>
-  <input type="number" required #newCalories>
+  <input class="form-control" type="number" required #newCalories>
 </div>
 <div>
   <button (click)="addClicked(newName.value,newDetails.value,newCalories.value);

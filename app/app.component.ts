@@ -7,7 +7,7 @@ import {Meal}from './meal.model';
   <h1>Meal Tracker</h1>
   <div class="row">
   <div class="col-md-9"id="main">
-  
+
 
   <meal-list
   [childMealList]="masterMealList"
@@ -36,7 +36,13 @@ public masterMealList :Meal[]=[
   new Meal("Ugali","a big chunk", 100),
   new Meal("Chapati and Beans","2 chapatis and a plate of beans", 600),
   new Meal("Cheese Burger","Double party burger with extra cheese", 1000),
+  new Meal("Milkshake","one 500ml milkshake", 200),
+  new Meal("Ugali","a big chunk", 100),
+  new Meal("Chapati and Beans","2 chapatis and a plate of beans", 600),
+  new Meal("Cheese Burger","Double party burger with extra cheese", 1000),
   new Meal("Milkshake","one 500ml milkshake", 200)
+
+
 
 ]
 selectedMeal:Meal = null;

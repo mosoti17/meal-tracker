@@ -7,15 +7,15 @@ import {Meal}from './meal.model';
       <h2>Edit Meal</h2>
       <div>
         <label>Enter Meal Name:</label>
-        <input [(ngModel)]="childSelectedMeal.name">
+        <input class="form-control" [(ngModel)]="childSelectedMeal.name">
       </div>
       <div>
         <label>Enter Meal Details:</label>
-        <input [(ngModel)]="childSelectedMeal.detais">
+        <input class="form-control" [(ngModel)]="childSelectedMeal.detais">
       </div>
       <div>
         <label>Enter Meal Calories :</label>
-        <input [(ngModel)]="childSelectedMeal.calories">
+        <input class="form-control" [(ngModel)]="childSelectedMeal.calories">
       </div>
       <div>
         <button (click)="doneClicked()">Done</button>

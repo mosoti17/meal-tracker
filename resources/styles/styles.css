@@ -44,3 +44,18 @@ box-shadow: 4px 4px 2px #888888;
   color: yellow;
   }
 }
+button{
+  margin-top: 2%;
+}
+body{
+  background-image: url("https://thumb9.shutterstock.com/display_pic_with_logo/3035168/426665332/stock-photo-green-vegetables-calculator-isolated-on-a-white-background-the-concept-of-calories-weight-loss-426665332.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#name{
+  min-height: 50px;
+}
+#details{
+  min-height: 40px;
+}
