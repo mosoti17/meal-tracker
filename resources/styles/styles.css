@@ -1,19 +1,46 @@
 h1 {
   color: blue;
   text-align: center;
+  font-family: 'Shojumaru', cursive;
+  font-size: 80px;
+  margin-bottom: 2%;
 }
 #list{
-background-color: blue;
+  background-color: #dee2e8;
 width:20%;
 text-align: center;
 padding: 0.2%;
 margin: 2%;
 word-break: break-all;
+hyphens: auto;
+min-height: 30%;
+box-shadow: 4px 4px 2px #888888;
 }
+
 #main{
   float: left;
+  h2{
+    text-align: center;
+    color: blue;
+  }
+
 }
 #select{
   width: 50%;
-  align: center;
+  font-size: 22;
+  background-color: #8ba1c4;
+}
+.new-meal{
+  margin-top: 20%;
+  margin-left: 20%;
+  h2{
+  color: yellow;
+  }
+}
+.edit{
+
+  margin-left: 20%;
+  h2{
+  color: yellow;
+  }
 }

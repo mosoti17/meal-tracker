@@ -7,7 +7,7 @@ import {Meal}from './meal.model';
   <h1>Meal Tracker</h1>
   <div class="row">
   <div class="col-md-9"id="main">
-    <h1>List of Meals</h1>
+  
 
   <meal-list
   [childMealList]="masterMealList"
@@ -16,12 +16,12 @@ import {Meal}from './meal.model';
   ></meal-list>
   </div >
   <div class="col-md-3" >
-  <div class="row">
+  <div class="row new-meal">
   <new-meal
   (newMealSender)="addMeal($event)"
   ></new-meal>
   </div>
-  <div class="row">
+  <div class="row edit">
   <edit-meal
   [childSelectedMeal]= "selectedMeal"
   (doneClickedSender)="finishedEditing()"
@@ -33,7 +33,10 @@ import {Meal}from './meal.model';
 })
 export class AppComponent {
 public masterMealList :Meal[]=[
-  new Meal("Ugali","a big chunk", 100)
+  new Meal("Ugali","a big chunk", 100),
+  new Meal("Chapati and Beans","2 chapatis and a plate of beans", 600),
+  new Meal("Cheese Burger","Double party burger with extra cheese", 1000),
+  new Meal("Milkshake","one 500ml milkshake", 200)
 
 ]
 selectedMeal:Meal = null;

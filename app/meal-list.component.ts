@@ -4,11 +4,11 @@ import {Meal}from './meal.model';
   selector: 'meal-list',
   template: `
   <div class="row" align="center">
-  <select (change)="onChange($event.target.value )"class="filter"id="select">
+  <h2> List of Meals  <select (change)="onChange($event.target.value )"class="filter"id="select">
   <option value="all " selected="selected">Show All</option>
   <option value=">500calories"> Foods with more than 500 calories</option>
   <option value="<500calories">Foods with less than 500 calories </option>
-</select>
+</select></h2>
 </div>
   <div *ngFor="let currentMeal of childMealList| calories:selectedCalories" class="col-md-3" id="list">
   <h3>{{currentMeal.name}}</h3>
